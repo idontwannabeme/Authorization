@@ -1,0 +1,29 @@
+﻿<Page x:Class="Authorization.Register"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Authorization"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Регистрация">
+
+    <Grid Background="White">
+        <StackPanel Grid.Column="1" VerticalAlignment="Top"  >
+            <Label FontSize="20px" Margin="20,20,0,0" HorizontalAlignment="Left" Content="Регистрация"/>
+            <TextBlock Foreground="Gray" Text="Логин:" Margin="10"/>
+            <TextBox  BorderThickness="0,0,0,1" Name="txtLogin" TextChanged="txtLogin_TextChanged" />
+
+            <TextBlock Foreground="Gray" Text="Пароль:" Margin="10"/>
+            <PasswordBox BorderThickness="0,0,0,1" Name="txtPassword" />
+            <TextBlock Foreground="Gray" Text="Подтвердите Пароль:" Margin="10"/>
+            <PasswordBox BorderThickness="0,0,0,1" Name="txtPassword2" />
+            <CheckBox   IsChecked="True" Content="Я согласен с условиями ресурса" Margin="10"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                <Button Foreground="White" Background="#69f" Content="Регистрация" Margin="10"/>
+                <Button Foreground="#69f" BorderBrush="Transparent" Background="Transparent" Content="Назад" Margin="10" Click="Button_Click"/>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Page>
